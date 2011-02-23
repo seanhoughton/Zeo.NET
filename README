@@ -1,5 +1,15 @@
 Zeo.NET is a C# port of the Python Zeo raw data library.
 
+Hardware:
+In order to use this library please consult the Zeo documentation
+for building an interface cable and installing the raw data version
+of the firmware.
+
+http://zeorawdata.sourceforge.net/api.html
+
 Usage:
 
-// TODO
+The ZeoMonitor console application is an example of an extremely simple
+client app.  Using the library is simply a matter of creating an instance
+of the BaseLink class that is bound to the correct COM port and binding
+the data event to an instance of the Parser class.
