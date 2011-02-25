@@ -34,5 +34,25 @@ namespace Zeo.NET
             { 0x9C, EDataType.BadSignal },
             { 0x9D, EDataType.SleepStage}
         };
+
+        public enum EFrequencyBand
+        {
+            Delta,
+            Theta,
+            Beta1,
+            Beta2,
+            Beta3,
+            Gamma
+        };
+
+        public static Dictionary<EFrequencyBand, int> FrequencyBands = new Dictionary<EFrequencyBand, int>
+        { 
+            { EFrequencyBand.Delta, 0 },
+            { EFrequencyBand.Theta, 1 },
+            { EFrequencyBand.Beta1, 2 },
+            { EFrequencyBand.Beta2, 3 },
+            { EFrequencyBand.Beta3, 4 },
+            { EFrequencyBand.Gamma, 5 }
+        };
     }
 }
